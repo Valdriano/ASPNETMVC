@@ -1,0 +1,19 @@
+﻿@using ASPNETMVC.Aula.Models;
+@model Pessoa
+
+@{
+    ViewBag.Title = "Saudação";
+}
+
+<h2>Saudacao</h2>
+
+<p>Olá, seja bem-vindo: @Model.Nome</p><br />
+
+@Html.LabelFor( l => l.Idade )<br /> 
+@Html.EditorFor(l=> l.Idade  )<br />
+
+@Html.LabelFor( l => l.Endereco )<br /> 
+@Html.EditorFor( l => l.Endereco )<br />
+
+@Html.LabelFor( l => l.Email )<br />
+@Html.EditorFor( e => e.Email )

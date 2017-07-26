@@ -26,6 +26,9 @@ namespace ASPNETMVC.Aula
             bundles.Add( new StyleBundle( "~/Content/css" ).Include(
                       "~/Content/bootstrap.css" ,
                       "~/Content/site.css" ) );
+
+            //Para otiminizar o carregamento da pagina.
+            //BundleTable.EnableOptimizations = true;
         }
     }
 }

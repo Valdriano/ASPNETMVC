@@ -1,0 +1,57 @@
+﻿@using ASPNETMVC.Aula.Models;
+@model Pessoa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<br />
+<br />
+<p>Digite seu nome:</p>
+@using( Html.BeginForm( "Index" , "Teste" , FormMethod.Post ) )
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary( true )
+    @*@Html.TextBox("nome",null, new { id="txbNome"} )*@
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            @Html.LabelFor( l => l.Nome )
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            @Html.EditorFor( t => t.Nome , new { htmlAttributes = new { id = "txbNome" , @class = "form-control"} } )
+            @Html.ValidationMessageFor( m => m.Nome )
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            @Html.LabelFor( l => l.Idade )
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            @Html.EditorFor( t => t.Idade , new { htmlAttributes = new { id = "txbIdade" , @class = "form-control" } } )
+            @Html.ValidationMessageFor( m => m.Idade )
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            @Html.LabelFor( l => l.Endereco )
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            @Html.EditorFor( t => t.Endereco , new { htmlAttributes = new { id = "txbEndereco" , @class = "form-control" } } )
+            @Html.ValidationMessageFor( m => m.Endereco )
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            @Html.LabelFor( l => l.Email )
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            @Html.EditorFor( e => e.Email , new { htmlAttributes = new { id = "txbEmail" , @class = "form-control" } } )
+            @Html.ValidationMessageFor( m => m.Email )
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Enivar" class="btn-primary" />
+    </div>
+}
