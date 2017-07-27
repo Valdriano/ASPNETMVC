@@ -1,0 +1,11 @@
+﻿Passo a Passo para migração de dados no banco de dado com Entity Framework
+No Packge Manager Console
+
+* Habilitar Migration *
+PM> Enable-Migrations -ProjectName NomeDoProjeto
+
+* Adicioando Migração *
+Add-Migration VersaoDB_1_0_0_0 -ProjectName NomeDoProjeto - StartUpProjectName NomeDoProjeto
+
+* Atualizando Base de Dados * 
+Update-Database

@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETMVC.Aula", "ASPNETMVC.Aula\ASPNETMVC.Aula.csproj", "{8348728C-B82C-44D8-A753-F9F14C63C372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETMVC.Musicas.Web", "ASPNETMVC.Musicas.Web\ASPNETMVC.Musicas.Web.csproj", "{F0E27E63-7BD4-48FC-819D-1C57B4CA9672}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{6F3561CA-5605-4B56-9195-69E0FE1B3C33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETMVC.Musicas.Dominio", "ASPNETMVC.Musicas.Dominio\ASPNETMVC.Musicas.Dominio.csproj", "{625173A2-63B5-4A93-9833-5B90888128C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Acesso a Dados", "Acesso a Dados", "{76571B91-C65B-49C4-A775-AF13316A076E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETMVC.Musicas.AcessoDados.Entity", "ASPNETMVC.Musicas.AcessoDados.Entity\ASPNETMVC.Musicas.AcessoDados.Entity.csproj", "{2363F7F0-F5E9-496D-B411-5792ED76D993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETMVC.Comum.Entity", "ASPNETMVC.Comum.Entity\ASPNETMVC.Comum.Entity.csproj", "{C0818B76-1D34-4B48-8D6F-770403611A96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +27,29 @@ Global
 		{8348728C-B82C-44D8-A753-F9F14C63C372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8348728C-B82C-44D8-A753-F9F14C63C372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8348728C-B82C-44D8-A753-F9F14C63C372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E27E63-7BD4-48FC-819D-1C57B4CA9672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E27E63-7BD4-48FC-819D-1C57B4CA9672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E27E63-7BD4-48FC-819D-1C57B4CA9672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E27E63-7BD4-48FC-819D-1C57B4CA9672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625173A2-63B5-4A93-9833-5B90888128C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625173A2-63B5-4A93-9833-5B90888128C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625173A2-63B5-4A93-9833-5B90888128C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625173A2-63B5-4A93-9833-5B90888128C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2363F7F0-F5E9-496D-B411-5792ED76D993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2363F7F0-F5E9-496D-B411-5792ED76D993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2363F7F0-F5E9-496D-B411-5792ED76D993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2363F7F0-F5E9-496D-B411-5792ED76D993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0818B76-1D34-4B48-8D6F-770403611A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0818B76-1D34-4B48-8D6F-770403611A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0818B76-1D34-4B48-8D6F-770403611A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0818B76-1D34-4B48-8D6F-770403611A96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{625173A2-63B5-4A93-9833-5B90888128C5} = {6F3561CA-5605-4B56-9195-69E0FE1B3C33}
+		{2363F7F0-F5E9-496D-B411-5792ED76D993} = {76571B91-C65B-49C4-A775-AF13316A076E}
+		{C0818B76-1D34-4B48-8D6F-770403611A96} = {76571B91-C65B-49C4-A775-AF13316A076E}
 	EndGlobalSection
 EndGlobal
